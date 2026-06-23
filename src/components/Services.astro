@@ -1,0 +1,48 @@
+---
+const services = [
+  {
+    title: 'Orthopedic Rehab',
+    description: 'Recovery from injury or surgery, built around your goals and timeline.',
+    detail: 'Whether you\'re recovering from a torn ACL, shoulder repair, or a persistent overuse injury, Henry builds programs that meet you where you are — and get you back to what matters.',
+  },
+  {
+    title: 'Sports Performance',
+    description: 'Movement analysis, injury prevention, and return-to-sport programs.',
+    detail: 'For athletes looking to move more efficiently, avoid re-injury, or return to competition, Henry applies evidence-based performance principles to get you back on the court, trail, or field.',
+  },
+  {
+    title: 'Manual Therapy',
+    description: 'Hands-on techniques to restore mobility, reduce pain, and accelerate healing.',
+    detail: 'Using the Stanley Paris Method and advanced orthopedic manual therapy, Henry\'s hands-on treatment addresses the root cause of your pain — not just the symptoms.',
+  },
+];
+---
+<section id="services" class="py-24 px-6 bg-mist">
+  <div class="max-w-6xl mx-auto">
+    <h2
+      class="text-3xl sm:text-4xl font-bold text-charcoal mb-4"
+      style="font-family: 'Playfair Display', serif;"
+    >
+      Your situation is unique. So you deserve a custom plan.
+    </h2>
+    <p class="text-charcoal-light text-lg mb-12 max-w-2xl">
+      Every treatment plan is tailored to the individual — because no two injuries, goals, or patients are the same.
+    </p>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      {services.map(({ title, description, detail }) => (
+        <div class="bg-white rounded-2xl p-8 flex flex-col gap-4 shadow-sm hover:shadow-md transition-shadow duration-200">
+          <div class="w-10 h-1 bg-sage rounded-full"></div>
+          <h3
+            class="text-xl font-semibold text-charcoal"
+            style="font-family: 'Playfair Display', serif;"
+          >
+            {title}
+          </h3>
+          <p class="text-charcoal font-medium text-base">{description}</p>
+          <p class="text-charcoal-light text-sm leading-relaxed">{detail}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

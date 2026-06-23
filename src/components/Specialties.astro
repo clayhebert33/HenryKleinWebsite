@@ -1,0 +1,43 @@
+---
+const specialties = [
+  { label: 'Orthopedic & Sports Rehabilitation', icon: '🏃' },
+  { label: 'Running Injuries', icon: '👟' },
+  { label: 'Racquet Sports (Tennis, Pickleball)', icon: '🎾' },
+  { label: 'ACL Rehab & Post-Surgical Recovery', icon: '🦵' },
+  { label: 'Labral Repairs (Hip & Shoulder)', icon: '💪' },
+  { label: 'Shoulder & Knee Conditions', icon: '⚕️' },
+  { label: 'Pre/Post-Operative Care', icon: '🏥' },
+  { label: 'Geriatric Rehabilitation', icon: '🤝' },
+];
+
+const certifications = [
+  'Fellowship Credential — American Academy of Orthopedic Manual Physical Therapy',
+  'RacquetFit Certified',
+  'Stanley Paris Method for Manual Therapy',
+  'Currently pursuing Manual Therapy Fellowship — Institute for Athlete Regeneration',
+];
+---
+<section id="specialties" class="py-24 px-6">
+  <div class="max-w-6xl mx-auto">
+    <h2
+      class="text-3xl sm:text-4xl font-bold text-charcoal mb-4"
+      style="font-family: 'Playfair Display', serif;"
+    >
+      In pain or just want to perform your best? I can help...
+    </h2>
+    <p class="text-charcoal-light text-lg mb-12 max-w-2xl">
+      From competitive athletes to weekend warriors to post-surgical patients, I work with people across all levels of age and ability.
+    </p>
+
+    <!-- Specialty grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-16">
+      {specialties.map(({ label, icon }) => (
+        <div class="bg-white border border-mist rounded-xl p-5 flex flex-col items-center text-center gap-3 hover:border-sage-light hover:shadow-sm transition-all duration-200">
+          <span class="text-3xl" aria-hidden="true">{icon}</span>
+          <span class="text-charcoal font-medium leading-snug">{label}</span>
+        </div>
+      ))}
+    </div>
+
+  </div>
+</section>

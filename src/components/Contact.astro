@@ -1,0 +1,94 @@
+---
+// TODO: Wire form to Formspree or Netlify Forms
+// TODO: Replace placeholder phone and address
+---
+<section id="contact" class="py-24 px-6 bg-charcoal">
+  <div class="max-w-4xl mx-auto">
+    <h2
+      class="text-3xl sm:text-4xl font-bold text-cream mb-4"
+      style="font-family: 'Playfair Display', serif;"
+    >
+      Work With Henry
+    </h2>
+    <p class="text-cream/70 text-lg mb-12 max-w-xl">
+      Ready to move better? Reach out to schedule a consultation or ask a question.
+    </p>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+      <!-- Form -->
+      <form
+        class="flex flex-col gap-5"
+        action="#"
+        method="POST"
+      >
+        <div class="flex flex-col gap-1.5">
+          <label for="name" class="text-sm font-medium text-cream/80">Name</label>
+          <input
+            id="name"
+            name="name"
+            type="text"
+            required
+            placeholder="Your name"
+            class="bg-white/10 border border-white/20 rounded-lg px-4 py-3 text-cream placeholder:text-cream/40 focus:outline-none focus:border-sage focus:ring-1 focus:ring-sage transition-colors"
+          />
+        </div>
+        <div class="flex flex-col gap-1.5">
+          <label for="email" class="text-sm font-medium text-cream/80">Email</label>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            required
+            placeholder="your@email.com"
+            class="bg-white/10 border border-white/20 rounded-lg px-4 py-3 text-cream placeholder:text-cream/40 focus:outline-none focus:border-sage focus:ring-1 focus:ring-sage transition-colors"
+          />
+        </div>
+        <div class="flex flex-col gap-1.5">
+          <label for="message" class="text-sm font-medium text-cream/80">Message</label>
+          <textarea
+            id="message"
+            name="message"
+            required
+            rows="5"
+            placeholder="Tell Henry what you're dealing with..."
+            class="bg-white/10 border border-white/20 rounded-lg px-4 py-3 text-cream placeholder:text-cream/40 focus:outline-none focus:border-sage focus:ring-1 focus:ring-sage transition-colors resize-none"
+          ></textarea>
+        </div>
+        <button
+          type="submit"
+          class="bg-terracotta hover:bg-terracotta-dark text-white font-semibold px-8 py-4 rounded-full transition-colors duration-200 shadow-sm text-sm tracking-wide w-fit"
+        >
+          Send Message
+        </button>
+      </form>
+
+      <!-- Info -->
+      <div class="flex flex-col gap-8 justify-center">
+        <div>
+          <p class="text-cream/50 text-xs font-medium uppercase tracking-widest mb-2">Phone</p>
+          <!-- TODO: Replace with real phone number -->
+          <p class="text-cream text-lg">(512) 944-6995</p>
+        </div>
+        <div>
+          <p class="text-cream/50 text-xs font-medium uppercase tracking-widest mb-2">Location</p>
+          <p class="text-cream text-lg leading-relaxed">
+            Austin Athletic Performance and Recovery<br />
+            2119 Frate Barker Rd Unit 1102<br />Austin, TX 78748
+          </p>
+          <a
+            href="https://maps.app.goo.gl/7rxX7StTDhep4Rmb7"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-block mt-2 text-sage-light hover:text-sage text-sm underline underline-offset-2 transition-colors duration-200"
+          >
+            View on Google Maps
+          </a>
+        </div>
+        <div>
+          <p class="text-cream/50 text-xs font-medium uppercase tracking-widest mb-2">Response Time</p>
+          <p class="text-cream/80 text-base">Henry typically responds within one business day.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

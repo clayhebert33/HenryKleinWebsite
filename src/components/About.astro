@@ -1,0 +1,93 @@
+---
+---
+<section id="about" class="py-24 px-6 bg-mist">
+  <div class="max-w-4xl mx-auto">
+    <h2
+      class="text-3xl sm:text-4xl font-bold text-charcoal mb-10"
+      style="font-family: 'Playfair Display', serif;"
+    >
+      Meet Henry Klein: The Ted Lasso of Physical Therapy
+    </h2>
+
+    <!-- Bio + photo -->
+    <div class="flex flex-col md:flex-row md:items-start gap-10 mb-12">
+      <!-- Text left -->
+      <div class="flex-1 space-y-6 text-charcoal-light text-lg leading-relaxed">
+        <p>
+          Henry Klein grew up in Austin, Texas, surrounded by athletics and community. He earned his Bachelor of Science in Kinesiology from the University of Wisconsin in 2016, then returned home to complete his Doctorate of Physical Therapy at the University of St. Augustine in Austin in 2019 — where he was named <strong class="text-charcoal font-semibold">Most Outstanding Physical Therapy Student</strong>.
+        </p>
+        <p>
+          Henry specializes in orthopedic and sports rehabilitation, with a focus on running injuries and racquet sports. He gained hands-on experience working with top orthopedic surgeons in Austin, developing expertise in both surgical and non-surgical care — including ACL rehab, labral repairs, and shoulder and knee conditions.
+        </p>
+        <p>
+          A lifelong learner, Henry incorporates the latest clinical research into every treatment plan and believes in a holistic approach that combines therapeutic exercise and manual therapy.
+        </p>
+        <p>
+          Outside the clinic, Henry enjoys spending time with family and friends, playing golf, tennis, and pickleball, running, and exploring Austin with his girlfriend Morgan and his dog, <em>Rooster</em>.
+        </p>
+      </div>
+
+      <!-- Image right -->
+      <div class="flex-shrink-0 flex justify-center md:justify-end">
+        <img
+          src="/images/henry-klein-ted-lasso.jpeg"
+          alt="Henry Klein channeling his inner Ted Lasso"
+          class="rounded-2xl shadow-md w-72 sm:w-80 md:w-96"
+        />
+      </div>
+    </div>
+
+    <!-- Education & Certifications — full width -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <!-- Education -->
+      <div class="bg-white rounded-2xl p-8">
+        <h3
+          class="text-xl font-semibold text-charcoal mb-6"
+          style="font-family: 'Playfair Display', serif;"
+        >
+          Education
+        </h3>
+        <ul class="space-y-5">
+          <li class="flex items-start gap-3 text-charcoal-light">
+            <span class="mt-1.5 w-2 h-2 rounded-full bg-sage flex-shrink-0"></span>
+            <div>
+              <p class="text-charcoal font-medium">B.S. in Kinesiology</p>
+              <p class="text-sm mt-0.5">University of Wisconsin — 2016</p>
+            </div>
+          </li>
+          <li class="flex items-start gap-3 text-charcoal-light">
+            <span class="mt-1.5 w-2 h-2 rounded-full bg-sage flex-shrink-0"></span>
+            <div>
+              <p class="text-charcoal font-medium">Doctorate of Physical Therapy</p>
+              <p class="text-sm mt-0.5">University of St. Augustine, Austin — 2019</p>
+              <p class="text-stone text-xs mt-0.5">Most Outstanding Physical Therapy Student</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Certifications -->
+      <div class="bg-white rounded-2xl p-8">
+        <h3
+          class="text-xl font-semibold text-charcoal mb-6"
+          style="font-family: 'Playfair Display', serif;"
+        >
+          Certifications & Training
+        </h3>
+        <ul class="space-y-3">
+          {[
+            'Fellowship Credential — American Academy of Orthopedic Manual Physical Therapy',
+            'RacquetFit Certified',
+            'Stanley Paris Method for Manual Therapy',
+            'Currently pursuing Manual Therapy Fellowship — Institute for Athlete Regeneration',
+          ].map(cert => (
+            <li class="flex items-start gap-3 text-charcoal-light">
+              <span class="mt-1.5 w-2 h-2 rounded-full bg-sage flex-shrink-0"></span>
+              <span>{cert}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
